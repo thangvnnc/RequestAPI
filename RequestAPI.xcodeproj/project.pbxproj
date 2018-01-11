@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23DC22782007D78900E2288D /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 23DC20D52007D78800E2288D /* demo.js */; };
+		23DC23CC2007D78A00E2288D /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 23DC22742007D78900E2288D /* package.json */; };
+		23DC23CE2007D78A00E2288D /* upload.html in Resources */ = {isa = PBXBuildFile; fileRef = 23DC22772007D78900E2288D /* upload.html */; };
 		8F00D61D1FF4898600760FFB /* ReqAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F00D61C1FF4898600760FFB /* ReqAPI.swift */; };
 		8F00D6211FF48C1400760FFB /* ReqDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F00D6201FF48C1400760FFB /* ReqDefine.swift */; };
 		8F00D6231FF4955300760FFB /* ReqData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F00D6221FF4955300760FFB /* ReqData.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23DC20D52007D78800E2288D /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		23DC22742007D78900E2288D /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		23DC22772007D78900E2288D /* upload.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = upload.html; sourceTree = "<group>"; };
 		8F00D61C1FF4898600760FFB /* ReqAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqAPI.swift; sourceTree = "<group>"; };
 		8F00D6201FF48C1400760FFB /* ReqDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqDefine.swift; sourceTree = "<group>"; };
 		8F00D6221FF4955300760FFB /* ReqData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqData.swift; sourceTree = "<group>"; };
@@ -39,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23DC20D42007D78800E2288D /* ServerNode */ = {
+			isa = PBXGroup;
+			children = (
+				23DC20D52007D78800E2288D /* demo.js */,
+				23DC22742007D78900E2288D /* package.json */,
+				23DC22752007D78900E2288D /* upload */,
+				23DC22772007D78900E2288D /* upload.html */,
+			);
+			path = ServerNode;
+			sourceTree = "<group>";
+		};
+		23DC22752007D78900E2288D /* upload */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = upload;
+			sourceTree = "<group>";
+		};
 		8F00D61F1FF48B7600760FFB /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +102,7 @@
 		8FD869201FF36D4200BB77A3 = {
 			isa = PBXGroup;
 			children = (
+				23DC20D42007D78800E2288D /* ServerNode */,
 				8FD8692C1FF36D4200BB77A3 /* RequestAPI */,
 				8FD8692B1FF36D4200BB77A3 /* Products */,
 			);
@@ -172,6 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DC23CC2007D78A00E2288D /* package.json in Resources */,
+				23DC23CE2007D78A00E2288D /* upload.html in Resources */,
+				23DC22782007D78900E2288D /* demo.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

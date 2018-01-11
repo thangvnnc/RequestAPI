@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <form method="post" id="file" name="file" onsubmit="return false;">
+        <label>Select a file:</label><br>
+        <input type="file" name="file" required />
+        <input id="submit" type="submit" value="Upload" />
+    </form>
+    <div id="output"></div>
+</body>
+<script type="text/javascript">
+    $("#submit").click(function(){
+                       console.log("submit event");
+                       var fd = new FormData(document.getElementById("file"));
+                       $.ajax({
+                              url: "http://127.0.0.1:3333/upload",
+                              type: "POST",
+                              headers: {
+                              'file': $('#file')[0].files[0]
+                              },
+                              data: fd,
+                              processData: false,  // tell jQuery not to process the data
+                              contentType: false   // tell jQuery not to set contentType
+                              }).done(function( data ) {
+                                      console.log("PHP Output:");
+                                      console.log( data );
+                                      });
+                       return false;
+                       })
+    </script>
+
+</html>
